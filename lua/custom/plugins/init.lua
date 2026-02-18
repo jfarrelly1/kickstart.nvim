@@ -3,4 +3,6 @@
 --
 -- See the kickstart.nvim README for more information
 
-return {}
+return {
+  { 'dhruvasagar/vim-table-mode', ft = 'markdown' }, -- Lazy-loads on markdown,
+}

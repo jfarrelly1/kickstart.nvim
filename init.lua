@@ -173,7 +173,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 --close buffer
 vim.keymap.set('n', '<leader>bd', ':bdelete<CR>', { desc = 'Delete Buffer' }) -- Safe (prompts unsaved)
 -- terminal toggle
-vim.keymap.set('n', '<leader>tt', ':split | terminal<CR>', { desc = 'Horizontal terminal' })
+vim.keymap.set('n', '<leader>ts', ':split | terminal<CR>', { desc = 'Horizontal terminal' })
 
 --
 -- Diagnostic Config & Keymaps
@@ -864,7 +864,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = 'TSUpdate',
     config = function()
-      local filetypes = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'python' }
+      local filetypes = { 'bash', 'lua', 'vim', 'vimdoc', 'python', 'markdown', 'markdown_inline' }
       require('nvim-treesitter').install(filetypes)
       vim.api.nvim_create_autocmd('FileType', {
         pattern = filetypes,
