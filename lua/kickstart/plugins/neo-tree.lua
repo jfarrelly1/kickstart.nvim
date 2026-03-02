@@ -11,7 +11,7 @@ return {
   },
   lazy = false,
   keys = {
-    { '<leader>te', ':Neotree toggle<CR>', desc = 'NeoTree toggle' },
+    { '<leader>e', ':Neotree toggle<CR>', desc = 'NeoTree toggle' },
   },
   opts = {
     filesystem = {
